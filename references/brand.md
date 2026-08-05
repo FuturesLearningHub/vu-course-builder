@@ -52,8 +52,18 @@ All transitions and animations run 400ms or less, eased. Honor
 montage streams from the Higgsfield CDN with a particle-canvas fallback when
 the video cannot load.
 
-## Lockups
+## Lockups and bundled assets
 
 Use real Vanderbilt University lockups only (authorized use); the white
 wordmark sits in the top nav, and the footer carries the small lockup inside
 the closing slide.
+
+The skill bundles the brand assets in its own `assets/` directory in case no
+sibling course repo is available to clone from:
+
+- `assets/img/` - `vu-lockup-white.png` / `vu-lockup-black.png` (horizontal wordmark, nav and footer), `vu-centered-white.png` / `vu-centered-black.png` (stacked lockup), `vu-v-icon.png` / `vu-v-icon-nav.png` (the gold V mark), `favicon.svg` / `favicon-96.png`.
+- `assets/fonts/` - the seven self-hosted woff2 files: Libre Caslon Display 400, Libre Caslon Text 400 + italic, Inter 400/500/600, Antonio 700.
+
+Copy them into a new course's `assets/img/` and `assets/fonts/` unchanged.
+Cloning a sibling course repo already brings identical copies, so prefer
+that; the bundle is the fallback.

@@ -14,6 +14,8 @@ Course_Library catalog integration.
 - `references/facilitator.md` - notes.json schema, briefing page, printable guide
 - `references/library.md` - catalog cards, skill pills, core competencies, syllabi
 - `evals/evals.json` - test prompts and assertions used to validate the skill
+- `assets/img/` - VU lockups, V icon, favicons (authorized use only)
+- `assets/fonts/` - the seven self-hosted brand fonts (woff2)
 
 ## Install
 

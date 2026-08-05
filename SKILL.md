@@ -23,7 +23,7 @@ template - it already carries the engine, fonts, brand CSS, and both
 generators. As of writing the best template is `me5231979/emotional-intelligence`
 (90/60 course) or `me5231979/AI_Classroom` (60/30 beginner course).
 
-1. Clone the template repo into the new course repo's directory; keep `assets/fonts/`, `assets/js/qrcode.min.js`, the CSS engine blocks, and `tools/` intact.
+1. Clone the template repo into the new course repo's directory; keep `assets/fonts/`, `assets/img/` (VU lockups, V icon, favicons), `assets/js/qrcode.min.js`, the CSS engine blocks, and `tools/` intact. If no sibling repo is reachable, the skill's own `assets/` directory carries the lockups, favicons, and all seven brand fonts.
 2. Replace the copy slide by slide. Course shape: Welcome/QR (classroom only) -> Hero (objectives + skills row) -> Agenda -> 4 to 6 teaching sections, each with an interactive moment -> Recap quiz -> Capstone commitment card -> Closing (footer lives inside the closing slide).
 3. Rewrite the trainer configs, recap `QUESTIONS`, and capstone maps in `assets/js/main.js`.
 4. Rewrite `facilitator/notes.json` for the new sections (see the runbook reference).
