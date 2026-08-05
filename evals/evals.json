@@ -1,0 +1,52 @@
+{
+ "skill_name": "vu-course-builder",
+ "evals": [
+  {
+   "id": 0,
+   "name": "facilitator-runbook",
+   "prompt": "I'm adding a new course to the Vanderbilt Learning Series called 'Giving Effective Feedback'. Write the facilitator runbook file facilitator/notes.json for it. The deck slides are: s-hero, s-agenda, s-why (the case for feedback), s-sbi (the SBI model), s-practice (practice lab), s-receiving (how to receive feedback well), s-recap (scored recap quiz), s-capstone (commitment card), s-close. Full path is 90 minutes, Core path is 60. Save the file as notes.json in the output directory.",
+   "expected_output": "A notes.json matching the series schema: meta block with paths/prep/contingencies/toughQuestions/templates, one section per slide id with Say/Do/Ask/Debrief/Transition fields, minutes summing to exactly 90 and coreMinutes to exactly 60, no em dashes.",
+   "files": [],
+   "assertions": [
+    "notes.json exists and parses as valid JSON",
+    "Full-path minutes across sections sum to exactly 90",
+    "Core-path minutes across sections sum to exactly 60",
+    "Every requested slide id (s-hero through s-close) has a section entry",
+    "Sections carry the ATD structure: say, facilitate/do steps, a validate/debrief check, and a transition",
+    "No em or en dashes anywhere in the file"
+   ]
+  },
+  {
+   "id": 1,
+   "name": "library-card",
+   "prompt": "Add the new course 'Giving Effective Feedback' to the Vanderbilt course library page (index.html is in your input files; save your edited copy as index.html in the output directory). It's a course for managers. Topics: leadership and communication. Classroom session runs 90 minutes; self-paced takes about 45. The repo is me5231979/Giving-Effective-Feedback and it has the usual three editions. Pick 3 to 5 skills for it.",
+   "expected_output": "A new card matching the existing card anatomy: data-topics='leadership communication', length badge 'Classroom 90 min \u00b7 Self-paced ~45 min', 3-5 skill pills with at least one core competency (skillpill--core), the Manager Voyage line, and three edition buttons plus syllabus link.",
+   "files": [
+    "index.html"
+   ],
+   "assertions": [
+    "New card carries data-topics with leadership and communication so the filter bar picks it up",
+    "Length badge uses the standardized wording 'Classroom 90 min \u00b7 Self-paced ~45 min'",
+    "Card shows 3 to 5 skill pills, at least one styled as a core competency (skillpill--core)",
+    "The core-competency pill text is one of the seven VU core competencies",
+    "Card carries the 'Part of the Manager Voyage program' line",
+    "Card links all three editions (root, /web/, /facilitator/)"
+   ]
+  },
+  {
+   "id": 2,
+   "name": "teaching-slide",
+   "prompt": "Write the HTML for one new teaching slide about the SBI feedback model (Situation, Behavior, Impact) in the style of the Vanderbilt Learning Series course decks, ready to drop into a course's index.html. Include an interactive moment on the slide. Save it as slide.html in the output directory.",
+   "expected_output": "A <section class='slide'> with an Antonio eyebrow, a Libre Caslon .h2 headline with exactly one italic <em> word, FLH gold/black styling hooks, an interactive element, no em dashes, no external frameworks.",
+   "files": [],
+   "assertions": [
+    "Slide has an Antonio eyebrow label (class eyebrow)",
+    "Headline is a .h2 with exactly one italic <em> word",
+    "Uses FLH brand hooks (vu-gold token or #CFAE70 gold)",
+    "Contains an interactive element (button/trainer/check)",
+    "No em or en dashes in the markup",
+    "No external framework or CDN references"
+   ]
+  }
+ ]
+}
