@@ -1,7 +1,7 @@
 # Course_Library integration
 
-Catalog repo: `me5231979/Course_Library`, live at
-`https://me5231979.github.io/Course_Library/`. It republishes automatically
+Catalog repo: `FuturesLearningHub/FLH-Learning-Library-`, live at
+`https://flh-learning-library.vercel.app/`. It republishes automatically
 when `main` is pushed (GitHub Pages workflow). **Always `git pull` before
 editing**; parallel sessions also work in this repo.
 

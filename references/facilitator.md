@@ -9,8 +9,8 @@ first draft shipped a standalone runbook) and the correction cost a full
 rebuild; do not repeat it. Reference implementations:
 
 - Horizontal-deck courses: `courses/emotional-intelligence/facilitator/` in
-  `me5231979/Course_Library`.
-- Book-mode (pager) courses: `facilitator/` in `me5231979/AI-Managers`
+  `FuturesLearningHub/FLH-Learning-Library-`.
+- Book-mode (pager) courses: `facilitator/` in `FuturesLearningHub/AI-Managers`
   (Leading with AI), including its `tools/build-facilitator.py`, which is the
   template generator to copy for new book-mode courses.
 

@@ -27,5 +27,5 @@ project's `.claude/skills/`.
 Related repos: the course sites (AI_Classroom, AI-Advanced,
 Difficult_Conversations, Coaching-for-Performance, Emotional-Intelligence,
 Presentation-Public-Speaking, AI-Managers), and the catalog,
-me5231979/Course_Library. AI-Managers (Leading with AI) is the reference
+FuturesLearningHub/FLH-Learning-Library-. AI-Managers (Leading with AI) is the reference
 implementation for the book-mode facilitator edition and its generator.

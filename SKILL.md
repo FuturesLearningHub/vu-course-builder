@@ -6,9 +6,9 @@ description: Build and maintain Vanderbilt FLH Learning Library interactive cour
 # Vanderbilt FLH Learning Library course builder
 
 Every new course is built to match **Working Smarter**, the reference
-implementation. Source: `me5231979/Course_Library`, files `learn/index.html`
+implementation. Source: `FuturesLearningHub/FLH-Learning-Library-`, files `learn/index.html`
 (self-paced) and `learn/classroom/index.html`. Live at
-`https://me5231979.github.io/Course_Library/learn/` and mirrored at
+`https://flh-learning-library.vercel.app/learn/` and mirrored at
 `https://flh-learning-library.vercel.app/learn/`. That file defines the
 standard look, the page architecture, the copy voice, and the interaction
 vocabulary. When a question about structure or styling comes up, the answer
@@ -38,7 +38,7 @@ Smarter source repo and replace the content. It already carries the shell,
 the progress engine, the panel router, the fonts, the brand CSS, the
 accessible component patterns, and the classroom / self-paced split.
 
-1. Copy `learn/index.html` from `me5231979/Course_Library` as the starting file, along with `assets/`. Keep the `:root` palette, the theme scopes, the pager, the progress engine, and the accessibility helpers intact. Work the `[EDIT]` banner at the top of the file: it lists every placeholder a new course must swap. If the repo is not reachable, this skill's own `assets/` directory carries the lockups, favicons, and all seven brand fonts.
+1. Copy `learn/index.html` from `FuturesLearningHub/FLH-Learning-Library-` as the starting file, along with `assets/`. Keep the `:root` palette, the theme scopes, the pager, the progress engine, and the accessibility helpers intact. Work the `[EDIT]` banner at the top of the file: it lists every placeholder a new course must swap. If the repo is not reachable, this skill's own `assets/` directory carries the lockups, favicons, and all seven brand fonts.
 2. Map the course to the section spine in `references/pattern.md`: home / hero, belief, the Chancellor's charge, how the course works, then 4 to 8 numbered teaching sections, then knowledge check, summary, next step, resources.
 3. Write the copy section by section. Each section gets a "you are here" line, an eyebrow, a one-italic-word headline, a lead, "The idea", and at least one interactive module.
 4. Build the interactive modules from the vocabulary in `references/pattern.md` (flip cards, drills, builders, graders, matchers, self-checks, simulators). Every one has an accessible recipe in `references/accessibility.md`. Do not invent a new interaction without writing its keyboard and screen reader behavior first.
@@ -135,6 +135,6 @@ for classroom-only markers leaking into the self-paced build.
 - `references/pattern.md` - the Working Smarter section and panel architecture, the module vocabulary, classroom vs self-paced, progress and privacy contract.
 - `references/accessibility.md` - the WCAG 2.2 AA contract, an accessible recipe for every interaction type, the audit scripts, and the ship gate.
 - `references/brand.md` - color tokens with verified contrast ratios, type stack, component classes, motion rules.
-- `references/facilitator.md` - the facilitator edition: the course-plus-script-rail pattern (deck and book-mode variants), notes.json schema, timing invariants, briefing page, Hide/Show contract, QR repoint, printable guide, page screenshot workflow. Book-mode reference implementation: `me5231979/AI-Managers`.
+- `references/facilitator.md` - the facilitator edition: the course-plus-script-rail pattern (deck and book-mode variants), notes.json schema, timing invariants, briefing page, Hide/Show contract, QR repoint, printable guide, page screenshot workflow. Book-mode reference implementation: `FuturesLearningHub/AI-Managers`.
 - `references/library.md` - catalog card, filter topics, skills and core competencies, syllabus, length badge format.
 - `references/deck.md` - **legacy**. The horizontal 100vw slide deck used by the older course repos. Read it only when editing one of those; never build a new course this way.
